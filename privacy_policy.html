@@ -67,12 +67,12 @@
 <main>
   <header>
     <h1>Política de Privacidad</h1>
-    <p>Falta Menos — JC Papelería e Informática · Última actualización: 18 de mayo de 2026</p>
+    <p>Falta Menos — JC Papelería e Informática · Última actualización: 21 de mayo de 2026</p>
   </header>
 
   <section class="card">
     <h2>1. Quiénes somos</h2>
-    <p>"Falta Menos" es una aplicación móvil para Android que permite a los usuarios gestionar su colección de figuritas del Mundial 2026 e intercambiarlas con otros coleccionistas. El responsable del tratamiento es <strong>JC Papelería e Informática</strong>.</p>
+    <p>"Falta Menos" es una aplicación móvil para Android que permite a los usuarios gestionar su colección de figuritas del Mundial 2026 y coordinar intercambios con otros coleccionistas. El responsable del tratamiento es <strong>JC Papelería e Informática</strong>.</p>
   </section>
 
   <section class="card">
@@ -84,19 +84,28 @@
     </ul>
     <p>En ambos casos almacenamos:</p>
     <ul>
-      <li>Tu colección de figuritas (propias y repetidas).</li>
-      <li>Publicaciones de intercambio que crees.</li>
-      <li>Preferencias de la app (idioma, equipo favorito, tema).</li>
-      <li>Foto de perfil que elijas desde tu galería o cámara (almacenada localmente).</li>
+      <li>Tu colección de figuritas (propias, faltantes y repetidas) y el álbum activo cuando manejás varios.</li>
+      <li>Preferencias de la app (idioma, tema claro/oscuro, equipo favorito, marco de avatar).</li>
+      <li>Foto de perfil que elijas desde tu galería o cámara (almacenada localmente en tu dispositivo).</li>
     </ul>
+
+    <h3>2.1 Datos de ubicación pública (opcionales)</h3>
+    <p>Para usar el módulo de intercambio podés cargar tu <strong>país, provincia/estado y ciudad</strong>. Estos datos son <strong>públicos para otros usuarios de la app</strong> dentro de la pantalla de matches y se usan únicamente para sugerirte personas cercanas con figuritas complementarias. Si no querés aparecer en matches, no completes el país y el módulo quedará desactivado para tu cuenta.</p>
+
+    <h3>2.2 Canal de contacto privado (opcional, cifrado)</h3>
+    <p>Podés cargar opcionalmente un canal de contacto (WhatsApp, email o Telegram) que la otra persona verá solo si <strong>aceptás expresamente</strong> una solicitud de intercambio. Este valor se guarda <strong>cifrado en nuestro servidor con AES-256-GCM</strong> y <strong>nunca</strong> se muestra en la pantalla pública de matches. Podés borrarlo o reemplazarlo cuando quieras desde "Perfil → Privacidad y contacto".</p>
+
+    <h3>2.3 Solicitudes, conexiones y bloqueos</h3>
+    <p>Registramos las solicitudes de contacto que enviás y recibís, su estado (pendiente, aceptada, rechazada, ignorada, expirada), las conexiones resultantes y los usuarios que bloqueás. Los usuarios bloqueados no pueden enviarte nuevas solicitudes ni aparecer en tus matches.</p>
   </section>
 
   <section class="card">
     <h2>3. Cómo usamos los datos</h2>
     <ul>
-      <li>Para guardar y sincronizar tu colección entre dispositivos.</li>
-      <li>Para mostrar tus publicaciones de intercambio a otros usuarios.</li>
-      <li>Para enviarte notificaciones push relacionadas con intercambios (solo si otorgas el permiso).</li>
+      <li>Para guardar y sincronizar tu colección y preferencias entre dispositivos.</li>
+      <li>Para sugerirte personas con figuritas complementarias a tu colección (matchmaking por país/región/ciudad y diferencia de colección).</li>
+      <li>Para revelar tu canal de contacto privado <strong>solo</strong> cuando ambos lados aceptan una solicitud.</li>
+      <li>Para enviarte notificaciones push relacionadas con intercambios (solo si otorgás el permiso).</li>
       <li>Para personalizar tu perfil con foto tomada desde cámara o galería.</li>
       <li>Para mejorar el funcionamiento de la app y diagnosticar errores.</li>
     </ul>
@@ -109,17 +118,18 @@
       <li><strong>Firebase (Google LLC):</strong> autenticación, almacenamiento de datos y notificaciones push (FCM). Firebase puede procesar datos en servidores fuera de tu país, incluido Estados Unidos.</li>
       <li><strong>Google Sign-In:</strong> para el inicio de sesión con cuenta Google.</li>
       <li><strong>Firebase Crashlytics (Google LLC):</strong> recopila informes de fallos (stack traces, modelo de dispositivo, versión de Android, identificador anónimo de instalación) para diagnóstico. Solo se activa tras tu consentimiento.</li>
-      <li><strong>Google AdMob (Google LLC):</strong> muestra anuncios dentro de la app. AdMob puede recoger el identificador de publicidad de Android (AAID), dirección IP, información del dispositivo y eventos del anuncio. Si no otorgas consentimiento, los anuncios se servirán en modo no personalizado (NPA). Más información: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</li>
-      <li><strong>Backend propio (jcpapeleria.com.es):</strong> nuestro servidor sincroniza tu perfil, colección, intercambios y token FCM. Los datos viajan cifrados (HTTPS) y se almacenan en servidores Hostinger ubicados en la Unión Europea.</li>
+      <li><strong>Google AdMob (Google LLC):</strong> muestra anuncios dentro de la app. AdMob puede recoger el identificador de publicidad de Android (AAID), dirección IP, información del dispositivo y eventos del anuncio. Si no otorgás consentimiento, los anuncios se servirán en modo no personalizado (NPA). Más información: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</li>
+      <li><strong>Backend propio (jcpapeleria.com.es):</strong> nuestro servidor sincroniza tu perfil, colección, intercambios, conexiones y token FCM. Los datos viajan cifrados (HTTPS) y se almacenan en servidores Hostinger ubicados en la Unión Europea.</li>
     </ul>
+    <p>Otros usuarios de la app ven únicamente: tu nombre de pantalla, tu foto de perfil (si la cargaste), tu ubicación pública (país/región/ciudad si la cargaste) y el tipo de canal de contacto que ofrecés (WhatsApp/email/Telegram, no su valor). El valor real del canal solo se revela tras aceptación mutua.</p>
   </section>
 
   <section class="card">
     <h2>5. Permisos que solicitamos</h2>
     <ul>
-      <li><strong>Cámara:</strong> para que puedas tomar una foto de perfil directamente con tu dispositivo y escanear códigos de figuritas.</li>
-      <li><strong>Galería / archivos multimedia:</strong> para que puedas elegir una foto de perfil desde tu galería.</li>
-      <li><strong>Notificaciones:</strong> para avisarte cuando alguien responde a tus intercambios (puedes denegarlo sin afectar el resto de la app).</li>
+      <li><strong>Cámara:</strong> para tomar foto de perfil y para escanear códigos de figuritas con OCR (las imágenes se procesan localmente y no se envían a ningún servidor).</li>
+      <li><strong>Galería / archivos multimedia:</strong> para elegir una foto de perfil desde tu galería.</li>
+      <li><strong>Notificaciones:</strong> para avisarte cuando recibís una solicitud o cuando alguien acepta la tuya (podés denegarlo sin afectar el resto de la app).</li>
       <li><strong>Internet:</strong> para sincronizar tu colección y conectarte con otros coleccionistas.</li>
       <li><strong>Identificador de publicidad (AD_ID):</strong> usado por AdMob para servir anuncios.</li>
     </ul>
@@ -127,38 +137,43 @@
 
   <section class="card">
     <h2>6. Almacenamiento y seguridad</h2>
-    <p>Los datos se almacenan en servidores seguros con cifrado en tránsito (HTTPS). Los datos sensibles (email, perfil) se guardan cifrados en el dispositivo mediante el almacenamiento seguro del sistema operativo Android.</p>
+    <p>Los datos viajan cifrados con HTTPS y se almacenan en servidores con acceso restringido en la Unión Europea (Hostinger). Aplicamos las siguientes medidas adicionales:</p>
+    <ul>
+      <li><strong>Canal de contacto privado</strong> (WhatsApp / email / Telegram) cifrado en reposo con AES-256-GCM antes de almacenarse en la base de datos. Las claves de cifrado se guardan separadas en variables de entorno del servidor y rotan periódicamente.</li>
+      <li><strong>Datos sensibles del dispositivo</strong> (tokens de sesión, refresh tokens) guardados con el almacenamiento seguro de Android (Keystore).</li>
+      <li><strong>Rate limiting</strong> en el backend para prevenir abuso y enumeración.</li>
+    </ul>
   </section>
 
   <section class="card">
     <h2>7. Retención y eliminación de datos</h2>
-    <p>Conservamos tus datos mientras tu cuenta esté activa. Puedes eliminarla en cualquier momento de tres formas:</p>
+    <p>Conservamos tus datos mientras tu cuenta esté activa. Podés eliminarla en cualquier momento de tres formas:</p>
     <ul>
       <li>Desde el menú lateral de la app: <strong>"Eliminar cuenta"</strong> — borra inmediatamente tu cuenta y todos tus datos del servidor.</li>
       <li>Desde el formulario web: <a href="https://jcpapeleria.com.es/delete-account/">https://jcpapeleria.com.es/delete-account/</a></li>
       <li>Por correo a <a href="mailto:jcpapeleriaeinformatica@gmail.com">jcpapeleriaeinformatica@gmail.com</a> solicitando la eliminación.</li>
     </ul>
-    <p>La eliminación borra perfil, colección, intercambios, token de notificación y registros del backend. Algunos datos pueden permanecer en copias de seguridad cifradas durante un máximo de <strong>90 días</strong> antes de su purga definitiva.</p>
+    <p>La eliminación borra perfil, colección, álbumes, canal de contacto cifrado, solicitudes enviadas/recibidas, conexiones, bloqueos, token de notificación y registros del backend. Algunos datos pueden permanecer en copias de seguridad cifradas durante un máximo de <strong>90 días</strong> antes de su purga definitiva.</p>
   </section>
 
   <section class="card">
     <h2>8. Base legal del tratamiento (RGPD)</h2>
     <p>La base legal para tratar tus datos es:</p>
     <ul>
-      <li>Tu <strong>consentimiento</strong> (art. 6.1.a RGPD) para publicidad personalizada, analítica de fallos y notificaciones push.</li>
-      <li>La <strong>ejecución del servicio</strong> (art. 6.1.b RGPD) para la cuenta, sincronización de colección, intercambios y funcionalidad core.</li>
+      <li>Tu <strong>consentimiento</strong> (art. 6.1.a RGPD) para publicidad personalizada, analítica de fallos, notificaciones push, ubicación pública y canal de contacto privado.</li>
+      <li>La <strong>ejecución del servicio</strong> (art. 6.1.b RGPD) para la cuenta, sincronización de colección y funcionalidad core.</li>
     </ul>
-    <p>Puedes revocar el consentimiento en cualquier momento desde el menú de la app o eliminando tu cuenta.</p>
+    <p>Podés revocar el consentimiento en cualquier momento desde el menú de la app (Perfil → Privacidad y contacto) o eliminando tu cuenta.</p>
   </section>
 
   <section class="card">
     <h2>9. Menores de edad</h2>
-    <p>La aplicación puede ser utilizada por público general. No recopilamos intencionalmente datos personales de niños sin consentimiento de sus padres o tutores. Si eres padre o tutor y crees que tu hijo nos proporcionó datos sin tu consentimiento, contáctanos para eliminarlos.</p>
+    <p>La aplicación puede ser utilizada por público general. No recopilamos intencionalmente datos personales de niños sin consentimiento de sus padres o tutores. Si sos padre o tutor y creés que tu hijo nos proporcionó datos sin tu consentimiento, contactanos para eliminarlos.</p>
   </section>
 
   <section class="card">
     <h2>10. Tus derechos</h2>
-    <p>Tienes derecho a acceder, corregir, eliminar, oponerte al tratamiento, limitarlo y portar tus datos en cualquier momento. Para ejercerlos, contáctanos por email a <a href="mailto:jcpapeleriaeinformatica@gmail.com">jcpapeleriaeinformatica@gmail.com</a>.</p>
+    <p>Tenés derecho a acceder, corregir, eliminar, oponerte al tratamiento, limitarlo y portar tus datos en cualquier momento. Para ejercerlos, contactanos por email a <a href="mailto:jcpapeleriaeinformatica@gmail.com">jcpapeleriaeinformatica@gmail.com</a>.</p>
   </section>
 
   <section class="card">
@@ -168,10 +183,10 @@
 
   <section class="card">
     <h2>12. Contacto</h2>
-    <p>Si tienes preguntas sobre esta política, escríbenos a:</p>
+    <p>Si tenés preguntas sobre esta política, escribinos a:</p>
     <p><strong>JC Papelería e Informática</strong><br>
     <a href="mailto:jcpapeleriaeinformatica@gmail.com">jcpapeleriaeinformatica@gmail.com</a></p>
-    <div class="accept">Al usar Falta Menos, aceptas esta política de privacidad.</div>
+    <div class="accept">Al usar Falta Menos, aceptás esta política de privacidad.</div>
   </section>
 
   <p class="footer">© JC Papelería e Informática — Falta Menos</p>
